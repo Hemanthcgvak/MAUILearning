@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MAUILearning.AboutPage"
+             Title="AboutPage">
+    <VerticalStackLayout Padding="30,50" Spacing="25">
+        <Label
+             Text="Hello, MAUI!"
+             Style="{StaticResource Headline}"
+             TextColor="#5F9EA0" 
+             SemanticProperties.HeadingLevel="Level1" />
+        <Entry 
+            x:Name="TextInput"
+            Placeholder="Enter text here"
+            HorizontalOptions="FillAndExpand" />
+        <Label 
+            x:Name="TextLabel"
+            Text="This text will change."
+            TextColor="#5F9EA0"
+            FontSize="20"
+            HorizontalOptions="Center"
+            VerticalOptions="Center" />
+
+        <Button 
+            Text="Update Label"
+            Clicked="OnUpdateLabelClicked"
+            HorizontalOptions="Center" />
+
+    </VerticalStackLayout>
+</ContentPage>

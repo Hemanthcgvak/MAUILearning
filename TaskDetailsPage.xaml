@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MAUILearning.TaskDetailsPage"
+             Title="Task Details">
+    <ScrollView>
+        <VerticalStackLayout Padding="20" Spacing="15">
+
+            <Label 
+                Text="Task 1 Details"
+                FontSize="28"
+                FontAttributes="Bold"
+                HorizontalOptions="Center"
+                Margin="0,0,0,20" />
+
+            <Label 
+                Text="1. Set Up the Development Environment"
+                FontSize="22"
+                FontAttributes="Bold"
+                HorizontalOptions="Center" />
+            <Label
+                Text="• Install the latest version of Visual Studio with .NET MAUI workload enabled."
+                HorizontalOptions="Start" />
+            <Label
+                Text="• Familiarize yourself with XAML for UI design and C# for code-behind logic."
+                HorizontalOptions="Start" />
+
+            <Label 
+                Text="2. Create a Simple 'Hello, MAUI' App"
+                FontSize="22"
+                FontAttributes="Bold"
+                HorizontalOptions="Center" />
+            <Label
+                Text="• Start by creating a new .NET MAUI project in Visual Studio."
+                HorizontalOptions="Start" />
+            <Label
+                Text="• Modify the default MainPage.xaml to display a simple label saying 'Hello, MAUI'."
+                HorizontalOptions="Start" />
+            <Label
+                Text="• Run the app on an Android emulator or iOS simulator."
+                HorizontalOptions="Start" />
+
+            <Label 
+                Text="3. Navigation Between Pages"
+                FontSize="22"
+                FontAttributes="Bold"
+                HorizontalOptions="Center" />
+            <Label
+                Text="• Create a second page (e.g., AboutPage.xaml)."
+                HorizontalOptions="Start" />
+            <Label
+                Text="• Add a button on the MainPage.xaml that navigates to AboutPage.xaml."
+                HorizontalOptions="Start" />
+            <Label
+                Text="• Use NavigationPage to handle page navigation."
+                HorizontalOptions="Start" />
+
+            <Label 
+                Text="4. Using Controls (Button, Entry, and Label)"
+                FontSize="22"
+                FontAttributes="Bold"
+                HorizontalOptions="Center" />
+            <Label
+                Text="• Add basic controls like Button, Entry (input field), and Label."
+                HorizontalOptions="Start" />
+            <Label
+                Text="• Write code that updates the label text based on the entry field when a button is clicked."
+                HorizontalOptions="Start" />
+
+            <Label 
+                Text="5. Handling Events"
+                FontSize="22"
+                FontAttributes="Bold"
+                HorizontalOptions="Center" />
+            <Label
+                Text="• Add event handlers for buttons, such as a simple click event that changes the text or color of a label."
+                HorizontalOptions="Start" />
+            <Label
+                Text="• Practice writing event-handling code in the code-behind file (MainPage.xaml.cs)."
+                HorizontalOptions="Start" />
+
+            <Button
+                Text="Back to Main Page"
+                Clicked="OnBackButtonClicked"
+                HorizontalOptions="Center"
+                VerticalOptions="End"
+                Margin="0,20,0,0" />
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>
+
