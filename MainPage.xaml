@@ -30,6 +30,11 @@
                 Text="Task Details"
                 Clicked="OnTaskDetailsClicked"
                 HorizontalOptions="Fill" />
+            <Button
+                x:Name="CRUDBtn"
+                Text="Crud Operation"
+                Clicked="OnCrudClicked"
+                HorizontalOptions="Fill" />
         </VerticalStackLayout>
     </ScrollView>
 

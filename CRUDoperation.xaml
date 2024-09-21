@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MAUILearning.CRUDoperation"
+             Title="Protein Powder CRUD">
+    <StackLayout Padding="20">
+
+        <!-- Input Fields -->
+        <Entry x:Name="NameEntry" Placeholder="Protein Name" />
+        <Entry x:Name="BrandEntry" Placeholder="Brand" />
+        <Entry x:Name="ProteinEntry" Placeholder="Protein per Serving (g)" Keyboard="Numeric" />
+        <Entry x:Name="FlavorEntry" Placeholder="Flavor" />
+
+        <!-- Save and Delete Buttons -->
+        <Button x:Name="SaveButton" Text="Add Protein Powder" Clicked="OnSaveClicked"/>
+        <Button Text="Delete Protein Powder" Clicked="OnDeleteClicked"/>
+
+        <!-- Table Headers -->
+        <Grid ColumnDefinitions="*,*,*,*">
+            <Label Text="Name" FontAttributes="Bold" Grid.Column="0" />
+            <Label Text="Brand" FontAttributes="Bold" Grid.Column="1" />
+            <Label Text="Protein (g)" FontAttributes="Bold" Grid.Column="2" />
+            <Label Text="Flavor" FontAttributes="Bold" Grid.Column="3" />
+        </Grid>
+
+        <!-- Protein Powder Table -->
+        <CollectionView x:Name="ProteinPowderTable" SelectionMode="Single" SelectionChanged="OnProteinPowderSelected">
+            <CollectionView.ItemTemplate>
+                <DataTemplate>
+                    <Grid ColumnDefinitions="*,*,*,*">
+                        <Label Text="{Binding Name}" Grid.Column="0" />
+                        <Label Text="{Binding Brand}" Grid.Column="1" />
+                        <Label Text="{Binding ProteinPerServing}" Grid.Column="2" />
+                        <Label Text="{Binding Flavor}" Grid.Column="3" />
+                    </Grid>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+        </CollectionView>
+
+    </StackLayout>
+</ContentPage>

@@ -18,5 +18,9 @@ namespace MAUILearning
         {
             await Navigation.PushModalAsync(new TaskDetailsPage());
         }
+        private async void OnCrudClicked(object sender, EventArgs e)
+        {
+            await Navigation.PushModalAsync(new CRUDoperation());
+        }
     }
 }
