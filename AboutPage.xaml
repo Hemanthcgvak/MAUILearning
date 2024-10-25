@@ -2,7 +2,7 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="MAUILearning.AboutPage"
-             Title="AboutPage">
+             Title="Task 1">
     <VerticalStackLayout Padding="30,50" Spacing="25">
         <Label
              Text="Hello, MAUI!"
@@ -25,6 +25,5 @@
             Text="Update Label"
             Clicked="OnUpdateLabelClicked"
             HorizontalOptions="Center" />
-
     </VerticalStackLayout>
 </ContentPage>

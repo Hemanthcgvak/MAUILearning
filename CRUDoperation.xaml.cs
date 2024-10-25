@@ -95,5 +95,9 @@ namespace MAUILearning
                 SaveButton.Text = "Update Protein Powder"; // Change button text to "Update"
             }
         }
+        private async void OnBackButtonClicked(object sender, EventArgs e)
+        {
+            await Navigation.PopModalAsync();
+        }
     }
 }

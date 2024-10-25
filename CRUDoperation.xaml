@@ -6,7 +6,7 @@
     <StackLayout Padding="20">
 
         <!-- Input Fields -->
-        <Entry x:Name="NameEntry" Placeholder="Protein Name" />
+        <Entry x:Name="NameEntry" Placeholder="Name" />
         <Entry x:Name="BrandEntry" Placeholder="Brand" />
         <Entry x:Name="ProteinEntry" Placeholder="Protein per Serving (g)" Keyboard="Numeric" />
         <Entry x:Name="FlavorEntry" Placeholder="Flavor" />
@@ -36,6 +36,11 @@
                 </DataTemplate>
             </CollectionView.ItemTemplate>
         </CollectionView>
-
+        <Button
+       Text="Back to Main Page"
+       Clicked="OnBackButtonClicked"
+       HorizontalOptions="Center"
+       VerticalOptions="End"
+       Margin="0,20,0,0" />
     </StackLayout>
 </ContentPage>

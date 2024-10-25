@@ -18,21 +18,20 @@
                 Style="{StaticResource SubHeadline}"
                 SemanticProperties.HeadingLevel="Level2"
                 SemanticProperties.Description="Welcome to MAUI Learning" />
-
-            <Button
-                x:Name="NavigateBtn"
-                Text="Go to About Page"
-                Clicked="OnNavigateClicked"
-                HorizontalOptions="Fill" />
-
             <Button
                 x:Name="TaskDetailsBtn"
                 Text="Task Details"
                 Clicked="OnTaskDetailsClicked"
                 HorizontalOptions="Fill" />
             <Button
+                x:Name="NavigateBtn"
+                Text="Task 1"
+                Clicked="OnNavigateClicked"
+                HorizontalOptions="Fill" />
+
+            <Button
                 x:Name="CRUDBtn"
-                Text="Crud Operation"
+                Text="Task 2"
                 Clicked="OnCrudClicked"
                 HorizontalOptions="Fill" />
         </VerticalStackLayout>
